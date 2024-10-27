@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Message Details</title>
+    <link rel ="stylesheet" type="text/css" href="/styles.css">
+  </head>
+  <body>
+    <h2>Message</h2>
+    <div class="messageDetailContainer">
+      <div class="message">
+        <div class="msgText"><%= message.text %></div>
+        <div class="msgAuthor"><%= message.user %></div>
+        <div class="msgDate"><%= message.added %></div>
+      </div>
+    </div>
+    <div>
+      <a href="/new">New Message</a>
+    </div>
+  </body>
+</html>
+

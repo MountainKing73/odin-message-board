@@ -5,13 +5,17 @@
   </head>
   <body>
     <div class="messagesContainer">
-      <% messages.forEach((message) => { %>
+      <% messages.forEach((message, i) => { %>
         <div class="message">
-          <div class="msgText"><%= message.text %></div>
+          <div class="msgText"><a href="/message/<%= i %>"><%= message.text %></a></div>
           <div class="msgAuthor"><%= message.user %></div>
           <div class="msgDate"><%= message.added %></div>
         </div>
       <% }); %>
     </div>
+    <div>
+      <a href="/new">New Message</a>
+    </div>
   </body>
 </html>
+
