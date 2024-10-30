@@ -7,7 +7,7 @@
     <div class="messagesContainer">
       <% messages.forEach((message, i) => { %>
         <div class="message">
-          <div class="msgText"><a href="/message/<%= i %>"><%= message.text %></a></div>
+          <div class="msgText"><a href="/message/<%= message.id %>"><%= message.text %></a></div>
           <div class="msgAuthor"><%= message.user %></div>
           <div class="msgDate"><%= message.added %></div>
         </div>
